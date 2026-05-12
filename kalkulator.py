@@ -13,6 +13,10 @@ dzial = int(dzial)
 print("myślę...")
 time.sleep(5)
 if dzial == 1:
-    print(int(x)+int(y))
+    print("twój wynik to",int(x)+int(y))
 if dzial == 2:
-    print(int(x)- int(y))
+    print("twój wynik to",int(x)- int(y))
+if dzial == 3:
+    print("twój wynik to",int(x)*int(y))
+if dzial == 4:
+    print("twój wynik to",int(x)/int(y))
