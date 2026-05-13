@@ -20,19 +20,19 @@ print("5: √")
 print("6: ⁿ")
 dzial = input()
 dzial = int(dzial)
-
+# ----------------------------------------------------------pierwiastki
 if dzial == 5:
     print("twój wynik to", math.sqrt(x))
     quit()
-
+#----------------------------------------------------------potęgi
 if dzial == 6:
     print("wybierz do jakiej potęgi chcesz podnieść swoją liczbę")
     y = input()
     y = int(y)
-    for i in range(y):
-        tmp = int(x)*int(x)
-    print(tmp)
+    tmp = x**y
+    print("twój wynik to",tmp)
     quit()
+    
 y = input("wybierz swoją drugą liczbę ")
 
 for i in range(len(y)):
