@@ -9,14 +9,15 @@ for i in range(len(x)):
         quit()
 
 x = int(x)
-
+potegi = 0
+potegi = int(potegi)
 print("wybierz swoje działanie")
 print("1: +")
 print("2: -")
 print("3: *")
 print("4: :")
 print("5: √")
-
+print("6: ⁿ")
 dzial = input()
 dzial = int(dzial)
 
@@ -24,6 +25,14 @@ if dzial == 5:
     print("twój wynik to", math.sqrt(x))
     quit()
 
+if dzial == 6:
+    print("wybierz do jakiej potęgi chcesz podnieść swoją liczbę")
+    y = input()
+    y = int(y)
+    for i in range(y):
+        tmp = int(x)*int(x)
+    print(tmp)
+    quit()
 y = input("wybierz swoją drugą liczbę ")
 
 for i in range(len(y)):
