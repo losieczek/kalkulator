@@ -18,6 +18,9 @@ print("3: *")
 print("4: :")
 print("5: √")
 print("6: ⁿ")
+print("7: !")
+print("8: log₂")
+print("9: log")
 dzial = input()
 dzial = int(dzial)
 # ----------------------------------------------------------pierwiastki
@@ -32,18 +35,30 @@ if dzial == 6:
     tmp = x**y
     print("twój wynik to",tmp)
     quit()
-    
-y = input("wybierz swoją drugą liczbę ")
+if dzial == 7:
+    print("twój wynik to" , math.factorial(x)) 
+    quit()
+
+
+if dzial == 8:
+    print("twój wynik to" ,math.log2(x))
+    quit()
+
+if dzial == 9:
+    print("twój wynik to" ,math.log10(x))
+    quit()
 
 for i in range(len(y)):
     if y[i] not in "0123456789":
         print("to nie jest liczba")
         quit()
 
+
+
+y = input("wybierz swoją drugą liczbę ")
 y = int(y)
 
 time.sleep(1)
-
 if dzial == 1:
     print("twój wynik to", x + y)
 
