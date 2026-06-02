@@ -33,7 +33,7 @@ if dzial == 6:
     y = input()
     y = int(y)
     tmp = x**y
-    print("twój wynik to",tmp)
+    print("twój wynik to",x**y)
     quit()
 if dzial == 7:
     print("twój wynik to" , math.factorial(x)) 
